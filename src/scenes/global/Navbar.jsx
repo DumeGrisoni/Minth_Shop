@@ -1,6 +1,6 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { Badge, Box, Button, IconButton } from '@mui/material';
+import { Badge, Box, IconButton } from '@mui/material';
 import {
   PersonOutline,
   ShoppingBagOutlined,
@@ -51,15 +51,18 @@ const Navbar = () => {
           zIndex="2"
         >
           <IconButton
-            sx={{ color: 'black', '&:hover': { color: shades.secondary[500] } }}
+            sx={{
+              color: 'black',
+              '&:hover': { color: shades.secondary[500] },
+            }}
           >
-            <SearchOutlined />
+            <SearchOutlined sx={{ fontSize: '25px' }} />
           </IconButton>
 
           <IconButton
             sx={{ color: 'black', '&:hover': { color: shades.secondary[500] } }}
           >
-            <PersonOutline />
+            <PersonOutline sx={{ fontSize: '25px' }} />
           </IconButton>
 
           <Badge
@@ -83,14 +86,14 @@ const Navbar = () => {
                 '&:hover': { color: shades.secondary[500] },
               }}
             >
-              <ShoppingBagOutlined />
+              <ShoppingBagOutlined sx={{ fontSize: '25px' }} />
             </IconButton>
           </Badge>
 
           <IconButton
             sx={{ color: 'black', '&:hover': { color: shades.secondary[500] } }}
           >
-            <MenuOutlined />
+            <MenuOutlined sx={{ fontSize: '25px' }} />
           </IconButton>
         </Box>
       </Box>
